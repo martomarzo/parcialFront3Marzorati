@@ -1,12 +1,12 @@
 //Este componente deberia recibir por props y mostrar en pantalla la informacion
 //que envia el usuario
+const Card = (datos) => {
 
-function Card() {
     return (
       <div>
-                <h2>Esto es un componente</h2>
-                <p></p>
-                <button></button>
+                <h2>Hola {datos.nombre}</h2>
+                <p>Tu color favorito es:</p>
+                <button>{datos.color}</button>         
       </div>
     );
   }
